@@ -25,8 +25,7 @@ class Idevice:
         elif via == "network":
             param = "-n"
         else:
-            self.log.error(f"Unknown list type {via}")
-            return
+            raise ValueError(f"Unknown list type {via}")
 
         cmd = [f"{self.idevice_path}/idevice_id", param]
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE)

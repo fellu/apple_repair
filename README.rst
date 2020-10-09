@@ -12,6 +12,9 @@ With the collected data you can check what spare parts is needed and also can ge
 Implemented:
  - Basic Django functionality. :P
 
+Partially implemented
+ - Python wrapper for idevice
+
 Not implemented:
  - Device management
  - Client management
